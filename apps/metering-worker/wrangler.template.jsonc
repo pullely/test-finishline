@@ -33,8 +33,14 @@
         }
       ],
       "services": [
-        // @cycle-break:metering-worker->membership-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTUVNQkVSU0hJUF9XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC1maW5pc2hsaW5lLW1lbWJlcnNoaXAtd29ya2VyLXN0YWdlIgogICAgICAgIH0s
-        // @cycle-break:metering-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LWZpbmlzaGxpbmUtcG9saWN5LXdvcmtlci1zdGFnZSIKICAgICAgICB9
+        {
+          "binding": "MEMBERSHIP_WORKER",
+          "service": "test-finishline-membership-worker-stage"
+        },
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-finishline-policy-worker-stage"
+        }
       ]
     },
     "prod": {
@@ -50,8 +56,14 @@
         }
       ],
       "services": [
-        // @cycle-break:metering-worker->membership-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTUVNQkVSU0hJUF9XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC1maW5pc2hsaW5lLW1lbWJlcnNoaXAtd29ya2VyLXByb2QiCiAgICAgICAgfSw=
-        // @cycle-break:metering-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LWZpbmlzaGxpbmUtcG9saWN5LXdvcmtlci1wcm9kIgogICAgICAgIH0=
+        {
+          "binding": "MEMBERSHIP_WORKER",
+          "service": "test-finishline-membership-worker-prod"
+        },
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-finishline-policy-worker-prod"
+        }
       ]
     }
   }
