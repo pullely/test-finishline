@@ -1,0 +1,11 @@
+{
+  "reponame": "test-finishline",
+  "productname": "testfinishline",
+  "productdomain": "testfinishline.dev",
+  "apibaseurl": "https://api.testfinishline.dev",
+  "subdomain": "rahulvarghesepullely",
+  "orunWorkspace": "org_74d9eb0c2b3042c78a121a95683365f6",
+  "githuborg": "pullely",
+  "epicSlug": "infra-baselining",
+  "domain": false
+}
